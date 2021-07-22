@@ -1,15 +1,12 @@
 package com.company;
 
-public class IPhone {
-    int numOfCameras;
-    String displayType;
-    boolean bluetooth;
-    boolean wifi;
-    boolean airdrop;
-    int frontCameraMp;
-    int mainCameraMp;
+public interface IPhone {
 
-    String backToHome () {
+    default String backToHome () {
         return "Push the button";
+    }
+
+    default String charger () {
+        return "Lightning charger";
     }
 }

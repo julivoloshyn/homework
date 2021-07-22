@@ -1,7 +1,7 @@
 package com.company;
 
-public class IPhone12ProMax extends GeneralCharacteristics implements IPhone{
-    public IPhone12ProMax(int numOfCameras, String displayType, boolean bluetooth, boolean wifi,
+public class IPadAir2020 extends GeneralCharacteristics implements Tablet, IPhone {
+    public IPadAir2020(int numOfCameras, String displayType, boolean bluetooth, boolean wifi,
                        boolean airdrop, int frontCameraMp, int mainCameraMp){
         this.numOfCameras = numOfCameras;
         this.displayType = displayType;
@@ -12,6 +12,12 @@ public class IPhone12ProMax extends GeneralCharacteristics implements IPhone{
         this.mainCameraMp = mainCameraMp;
     }
 
+
+    @Override
+    public void supportOf3DModeling() {
+
+    }
+
     @Override
     public String backToHome() {
         return "Make a swipe";
@@ -19,7 +25,6 @@ public class IPhone12ProMax extends GeneralCharacteristics implements IPhone{
 
     @Override
     public String charger() {
-        return IPhone.super.charger();
+        return "Type C charger";
     }
-
 }

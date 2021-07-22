@@ -3,10 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        IPhone iph1 = ChooseIPhone.phone("7Plus");
-        IPhone iph2 = ChooseIPhone.phone("12ProMax");
+        GeneralCharacteristics iph1 = new IPhone12ProMax(2, "IPS", true, true, true, 12, 8);
+        GeneralCharacteristics iph2 = new IPhone7Plus(3, "XDR", true, true, true, 12, 12);
+        GeneralCharacteristics ipd = new IPadAir2020(1, "XDR", true, true, true, 12, 7);
 
-        System.out.println("Back to home: " + iph1.backToHome());
-        System.out.println("Back to home: " + iph2.backToHome());
+        
     }
 }
