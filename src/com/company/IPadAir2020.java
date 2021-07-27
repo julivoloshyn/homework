@@ -1,6 +1,7 @@
 package com.company;
 
 public class IPadAir2020 extends GeneralCharacteristics implements Tablet, IPhone {
+
     public IPadAir2020(int numOfCameras, String displayType, boolean bluetooth, boolean wifi,
                        boolean airdrop, int frontCameraMp, int mainCameraMp){
         this.numOfCameras = numOfCameras;
